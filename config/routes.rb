@@ -1,4 +1,9 @@
 App::Application.routes.draw do
+  resources :countries do 
+	resources :leagues
+  end
+
+
   resources :posts
 root :to=> 'posts#index'
   # The priority is based upon order of creation:
