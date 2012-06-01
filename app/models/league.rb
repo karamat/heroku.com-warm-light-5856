@@ -1,4 +1,4 @@
 class League < ActiveRecord::Base
-  attr_accessible :name
+  attr_accessible :name,:country_id
   belongs_to :country
 end
