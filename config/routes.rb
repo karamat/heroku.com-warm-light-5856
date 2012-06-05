@@ -3,9 +3,9 @@ App::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  resources :countries do 
-	resources :leagues
-  end
+  resources :countries 
+  resources :leagues
+ 
 
 
   resources :posts
