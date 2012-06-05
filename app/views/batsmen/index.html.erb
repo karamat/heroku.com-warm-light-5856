@@ -1,0 +1,45 @@
+<h1>Listing batsmen</h1>
+
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Innings</th>
+    <th>Nout</th>
+    <th>Runs</th>
+    <th>Hights</th>
+    <th>Bestf</th>
+    <th>Sr</th>
+    <th>Hundred</th>
+    <th>Fifty</th>
+    <th>Zero</th>
+    <th>4fours</th>
+    <th>6siz</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @batsmen.each do |batsman| %>
+  <tr>
+    <td><%= batsman.player_id %></td>
+    <td><%= batsman.innings %></td>
+    <td><%= batsman.nout %></td>
+    <td><%= batsman.runs %></td>
+    <td><%= batsman.hights %></td>
+    <td><%= batsman.bestf %></td>
+    <td><%= batsman.sr %></td>
+    <td><%= batsman.hundred %></td>
+    <td><%= batsman.fifty %></td>
+    <td><%= batsman.zero %></td>
+    <td><%= batsman.fours %></td>
+    <td><%= batsman.siz %></td>
+    <td><%= link_to 'Show', batsman %></td>
+    <td><%= link_to 'Edit', edit_batsman_path(batsman) %></td>
+    <td><%= link_to 'Destroy', batsman, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Batsman', new_batsman_path %>

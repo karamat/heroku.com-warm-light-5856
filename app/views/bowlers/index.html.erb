@@ -1,0 +1,43 @@
+<h1>Listing bowlers</h1>
+
+<table>
+  <tr>
+    <th>Innings</th>
+    <th>Player</th>
+    <th>Overs</th>
+    <th>Madian</th>
+    <th>Runs</th>
+    <th>Bbi</th>
+    <th>Ave</th>
+    <th>Econ</th>
+    <th>4haul</th>
+    <th>5haul</th>
+    <th>Sr</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bowlers.each do |bowler| %>
+  <tr>
+    <td><%= bowler.innings %></td>
+    <td><%= bowler.player_id %></td>
+    <td><%= bowler.overs %></td>
+    <td><%= bowler.madian %></td>
+    <td><%= bowler.runs %></td>
+    <td><%= bowler.BBI %></td>
+    <td><%= bowler.ave %></td>
+    <td><%= bowler.econ %></td>
+    <td><%= bowler.fourhaul %></td>
+    <td><%= bowler.fivehaul %></td>
+    <td><%= bowler.sr %></td>
+    <td><%= link_to 'Show', bowler %></td>
+    <td><%= link_to 'Edit', edit_bowler_path(bowler) %></td>
+    <td><%= link_to 'Destroy', bowler, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bowler', new_bowler_path %>

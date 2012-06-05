@@ -1,0 +1,61 @@
+<%= form_for(@bowler) do |f| %>
+  <% if @bowler.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bowler.errors.count, "error") %> prohibited this bowler from being saved:</h2>
+
+      <ul>
+      <% @bowler.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :innings %><br />
+    <%= f.text_field :innings %>
+  </div>
+  <div class="field">
+    <%= f.label :player_id %><br />
+    <%= f.text_field :player_id %>
+  </div>
+  <div class="field">
+    <%= f.label :overs %><br />
+    <%= f.text_field :overs %>
+  </div>
+  <div class="field">
+    <%= f.label :madian %><br />
+    <%= f.text_field :madian %>
+  </div>
+  <div class="field">
+    <%= f.label :runs %><br />
+    <%= f.text_field :runs %>
+  </div>
+  <div class="field">
+    <%= f.label :BBI %><br />
+    <%= f.text_field :BBI %>
+  </div>
+  <div class="field">
+    <%= f.label :ave %><br />
+    <%= f.text_field :ave %>
+  </div>
+  <div class="field">
+    <%= f.label :econ %><br />
+    <%= f.text_field :econ %>
+  </div>
+  <div class="field">
+    <%= f.label :fourhaul %><br />
+    <%= f.text_field :fourhaul %>
+  </div>
+  <div class="field">
+    <%= f.label :fivehaul %><br />
+    <%= f.text_field :fivehaul %>
+  </div>
+  <div class="field">
+    <%= f.label :sr %><br />
+    <%= f.text_field :sr %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

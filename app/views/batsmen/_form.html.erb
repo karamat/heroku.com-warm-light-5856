@@ -1,0 +1,65 @@
+<%= form_for(@batsman) do |f| %>
+  <% if @batsman.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@batsman.errors.count, "error") %> prohibited this batsman from being saved:</h2>
+
+      <ul>
+      <% @batsman.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :player_id %><br />
+    <%= f.text_field :player_id %>
+  </div>
+  <div class="field">
+    <%= f.label :innings %><br />
+    <%= f.text_field :innings %>
+  </div>
+  <div class="field">
+    <%= f.label :nout %><br />
+    <%= f.text_field :nout %>
+  </div>
+  <div class="field">
+    <%= f.label :runs %><br />
+    <%= f.text_field :runs %>
+  </div>
+  <div class="field">
+    <%= f.label :hights %><br />
+    <%= f.text_field :hights %>
+  </div>
+  <div class="field">
+    <%= f.label :bestf %><br />
+    <%= f.text_field :bestf %>
+  </div>
+  <div class="field">
+    <%= f.label :sr %><br />
+    <%= f.text_field :sr %>
+  </div>
+  <div class="field">
+    <%= f.label :hundred %><br />
+    <%= f.text_field :hundred %>
+  </div>
+  <div class="field">
+    <%= f.label :fifty %><br />
+    <%= f.text_field :fifty %>
+  </div>
+  <div class="field">
+    <%= f.label :zero %><br />
+    <%= f.text_field :zero %>
+  </div>
+  <div class="field">
+    <%= f.label :4fours %><br />
+    <%= f.text_field :fours %>
+  </div>
+  <div class="field">
+    <%= f.label :siz %><br />
+    <%= f.text_field :siz %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

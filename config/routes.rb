@@ -1,4 +1,10 @@
 App::Application.routes.draw do
+  resources :bowlers
+
+  resources :batsmen
+
+  resources :players
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config

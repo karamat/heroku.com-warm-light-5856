@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  innings: 
+  player_id: 
+  overs: 
+  madian: 
+  runs: 
+  BBI: 
+  ave: 
+  econ: 1.5
+  4haul: 
+  5haul: 
+  sr: 1.5
+
+two:
+  innings: 
+  player_id: 
+  overs: 
+  madian: 
+  runs: 
+  BBI: 
+  ave: 
+  econ: 1.5
+  4haul: 
+  5haul: 
+  sr: 1.5

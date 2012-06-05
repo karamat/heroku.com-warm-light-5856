@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  player_id: 
+  innings: 
+  nout: 
+  runs: 
+  hights: 
+  bestf: 
+  sr: 
+  hundred: 
+  fifty: 
+  zero: 
+  4fours: 
+  6siz: 
+
+two:
+  player_id: 
+  innings: 
+  nout: 
+  runs: 
+  hights: 
+  bestf: 
+  sr: 
+  hundred: 
+  fifty: 
+  zero: 
+  4fours: 
+  6siz: 
