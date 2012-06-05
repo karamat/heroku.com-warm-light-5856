@@ -1,0 +1,11 @@
+www.espncricinfo.com:
+  enable: true
+  directory: /home/karamat/Downloads/scraped/espncricinfo/
+  max_pages: 1
+  statistics:
+    table: cricinfo_domestic
+    url: http://www.espncricinfo.com/australia-domestic-2011/content/series/518110.html
+    selector: 'div#ciHomeSpecials div.pnl320M div.ciLatestNewsContent'
+    match_title: 'p.seriesSmary strong'
+    most_runs: 'p.seriesFtrLinks span a.clusterLink'
+    
